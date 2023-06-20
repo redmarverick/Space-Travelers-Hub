@@ -19,7 +19,7 @@ function Layout() {
         <nav className="flex items-center">
           <NavLink to="/missions" exact="true" activexlassname="active" className="montserrat text-black text-sm font-medium tracking-wide uppercase ml-4">
             <div>
-              <MissionsList />
+              Missions
             </div>
           </NavLink>
           <NavLink to="/rockets" exact="true" activeclassname="active" className="montserrat text-black text-sm font-medium tracking-wide uppercase ml-4">
@@ -65,7 +65,7 @@ function App() {
             )}
           />
           <Route path="rockets" element={<div>rockets router</div>} />
-          <Route path="missions" element={<div>missions router</div>} />
+          <Route path="missions" element={<MissionsList />} />
           <Route path="*" element={<div>Error 404: Page not found</div>} />
         </Route>
       </Routes>

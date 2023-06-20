@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Mission = ({ mission }) => (
-  <>
-    <div>
+  <div className="px-8 py-4">
+    <div className="py-1 font-bold">
       Name:
       {mission.mission_name}
     </div>
-    <div>
+    <div className="py-1">
       Description:
       {mission.description}
     </div>
-    <div>
+    <div className="py-1">
       id:
       {mission.mission_id}
     </div>
-  </>
+  </div>
 );
 
 export default Mission;
