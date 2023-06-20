@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import { getMissions } from './redux/missions/missionsSlice';
 import { getRockets } from './redux/rockets/rocketsSlice';
 import MissionsList from './components/missions';
+import RocketsList from './components/rockets';
 
 function Layout() {
   return (
@@ -64,7 +65,7 @@ function App() {
               </div>
             )}
           />
-          <Route path="rockets" element={<div>rockets router</div>} />
+          <Route path="rockets" element={<RocketsList />} />
           <Route path="missions" element={<MissionsList />} />
           <Route path="*" element={<div>Error 404: Page not found</div>} />
         </Route>
