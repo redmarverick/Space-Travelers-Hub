@@ -16,3 +16,16 @@ body {
 .robotoslab {
   font-family: 'Roboto Slab', serif;
 }
+
+.active {
+  text-decoration: underline;
+}
+
+.active.profile {
+  text-decoration: none;
+}
+
+.active.profile div {
+  border-radius: 100%;
+  border: 2px solid black;
+}

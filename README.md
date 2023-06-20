@@ -15,7 +15,6 @@
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -25,23 +24,28 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [BookStore] <a name="about-project"></a>
+# 📖 [Space Travelers' Hub] <a name="about-project"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with [React-redux](https://redux.js.org/introduction/installation).
 
 ## 🛠 Built With <a name="built-with"></a>
 
-React
+React-redux
+axios
+TailWind
 
 ### Tech Stack <a name="tech-stack"></a>
 
 [React](https://github.com/facebook/create-react-app)
+[React-redux](https://redux.js.org/introduction/installation)
+[Axios](https://axios-http.com/docs/intro)
+[TailWindCSS](https://tailwindcss.com/)
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **A Bookstore**
+- **A Space Travelers' Hub**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -51,7 +55,7 @@ React
 
 ### Live Demo
 
-Feel free to check the live demo (deployed from FBranch): [link](https://bookstore-w6le.onrender.com/)
+(Coming soon~)
 
 ### Prerequisites
 
@@ -111,10 +115,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Deployment
-
-Check the live demo here: [link](https://emilokiju.github.io/ToDoReact/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -145,7 +145,7 @@ Check the live demo here: [link](https://emilokiju.github.io/ToDoReact/)
 
 ### Walkthrough
 
-You can add and delete elements from the bookstore
+You can see some sections but nothing much yet.
 
 <!-- CONTRIBUTING -->
 

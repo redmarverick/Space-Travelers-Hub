@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { applyMiddleware } from 'redux';
 import logger from 'redux-logger';
-import misionsReducer from './misions/misionsSlice';
+import missionsReducer from './missions/missionsSlice';
+import rocketsReducer from './rockets/rocketsSlice';
 
 const store = configureStore(
   {
     reducer: {
-      misions: misionsReducer,
+      missions: missionsReducer,
+      rockets: rocketsReducer,
     },
   },
   applyMiddleware(logger),
