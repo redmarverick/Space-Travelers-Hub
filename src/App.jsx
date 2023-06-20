@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getMissions } from './redux/missions/missionsSlice';
 import { getRockets } from './redux/rockets/rocketsSlice';
+import MissionsList from './components/missions';
 
 function Layout() {
   return (
@@ -18,7 +19,7 @@ function Layout() {
         <nav className="flex items-center">
           <NavLink to="/missions" exact="true" activexlassname="active" className="montserrat text-black text-sm font-medium tracking-wide uppercase ml-4">
             <div>
-              Missions
+              <MissionsList />
             </div>
           </NavLink>
           <NavLink to="/rockets" exact="true" activeclassname="active" className="montserrat text-black text-sm font-medium tracking-wide uppercase ml-4">
@@ -45,11 +46,11 @@ function App() {
 
   useEffect(() => {
     dispatch(getMissions());
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(getRockets());
-  }, []);
+  }, [dispatch]);
 
   return (
     <BrowserRouter>
