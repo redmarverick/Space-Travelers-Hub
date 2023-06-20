@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab');
+
+body {
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.robotoslab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.active.profile {
+  text-decoration: none;
+}
+
+.active.profile div {
+  border-radius: 100%;
+  border: 2px solid black;
+}
