@@ -31,6 +31,11 @@ const rocketsSlice = createSlice({
       const rockets = state.rocketsArr.find((item) => item.id === itemId);
       rockets.reserve = true;
     },
+    cancel: (state, action) => {
+      const itemId = action.payload;
+      const rockets = state.rocketsArr.find((item) => item.id === itemId);
+      rockets.reserve = false;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -44,6 +49,6 @@ const rocketsSlice = createSlice({
   },
 });
 
-export const { reserve } = rocketsSlice.actions;
+export const { reserve, cancel } = rocketsSlice.actions;
 
 export default rocketsSlice.reducer;
