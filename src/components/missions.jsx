@@ -13,14 +13,26 @@ const MissionsList = () => {
     );
   }
   return (
-    <ul>
-      {missions.map((mission) => (
-        <Mission
-          key={mission.mission_id}
-          mission={mission}
-        />
-      ))}
-    </ul>
+    <div className="px-8 py-4">
+      <table className="table-auto w-full">
+        <thead>
+          <tr>
+            <th className="px-4 py-2 border border-gray-500 text-left">Mission</th>
+            <th className="px-4 py-2 border border-gray-500 text-left">Description</th>
+            <th className="px-4 py-2 border border-gray-500 text-left">Status</th>
+            <th className="px-4 py-2 text-white border border-gray-500">button</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <Mission
+              key={mission.mission_id}
+              mission={mission}
+            />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 
