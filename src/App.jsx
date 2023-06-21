@@ -11,6 +11,7 @@ import { getMissions } from './redux/missions/missionsSlice';
 import { getRockets } from './redux/rockets/rocketsSlice';
 import MissionsList from './components/missions';
 import RocketsList from './components/rockets';
+import Profile from './components/profile';
 
 function Layout() {
   return (
@@ -61,7 +62,7 @@ function App() {
             index
             element={(
               <div>
-                Profile
+                <Profile />
               </div>
             )}
           />
