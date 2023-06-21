@@ -10,7 +10,9 @@ export const getMissions = createAsyncThunk('missions/getMissions', async () => 
     const extractedMissions = [];
     missions.forEach((element) => {
       const { mission_id, mission_name, description } = element;
-      extractedMissions.push({ mission_id, mission_name, description });
+      extractedMissions.push({
+        mission_id, mission_name, description, reserve: false,
+      });
     });
     return extractedMissions;
   } catch (error) {
@@ -21,6 +23,13 @@ export const getMissions = createAsyncThunk('missions/getMissions', async () => 
 const missionsSlice = createSlice({
   name: 'missions',
   initialState: { missionsArr: [], isLoading: true },
+  reducers: {
+    reserve: (state, action) => {
+      const itemId = action.payload;
+      const mission = state.missionsArr.find((item) => item.mission_id === itemId);
+      mission.reserve = true;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getMissions.pending, (state) => ({ ...state, isLoading: true }))
@@ -32,5 +41,7 @@ const missionsSlice = createSlice({
       .addCase(getMissions.rejected, (state) => ({ ...state, isLoading: false }));
   },
 });
+
+export const { reserve } = missionsSlice.actions;
 
 export default missionsSlice.reducer;
