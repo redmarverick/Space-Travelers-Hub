@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { reserve } from '../redux/missions/missionsSlice';
+import { joining } from '../redux/missions/missionsSlice';
 
 const Mission = ({ mission }) => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const Mission = ({ mission }) => {
         id:
         {mission.mission_id}
       </div>
-      <button type="button" className="p-2" onClick={() => dispatch(reserve(mission.mission_id))}>reserve</button>
+      <button type="button" className="p-2" onClick={() => dispatch(joining(mission.mission_id))}>join</button>
     </div>
   );
 };

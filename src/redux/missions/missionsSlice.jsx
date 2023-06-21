@@ -11,7 +11,7 @@ export const getMissions = createAsyncThunk('missions/getMissions', async () => 
     missions.forEach((element) => {
       const { mission_id, mission_name, description } = element;
       extractedMissions.push({
-        mission_id, mission_name, description, reserve: false,
+        mission_id, mission_name, description, joining: false,
       });
     });
     return extractedMissions;
@@ -24,10 +24,10 @@ const missionsSlice = createSlice({
   name: 'missions',
   initialState: { missionsArr: [], isLoading: true },
   reducers: {
-    reserve: (state, action) => {
+    joining: (state, action) => {
       const itemId = action.payload;
       const mission = state.missionsArr.find((item) => item.mission_id === itemId);
-      mission.reserve = true;
+      mission.joining = true;
     },
   },
   extraReducers: (builder) => {
@@ -42,6 +42,6 @@ const missionsSlice = createSlice({
   },
 });
 
-export const { reserve } = missionsSlice.actions;
+export const { joining } = missionsSlice.actions;
 
 export default missionsSlice.reducer;
