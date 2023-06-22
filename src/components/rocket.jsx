@@ -17,6 +17,7 @@ const Rocket = ({ rocket }) => {
   return (
     <div className="px-8 py-4">
       <div className="py-1 font-bold">
+        Name:
         {rocket.name}
       </div>
       <div className="py-1">
