@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 
 const Reservedrocket = ({ rocket }) => (
   <>
-    <div>{rocket.name}</div>
+    <tr className="p-2 border border-x-transparent border-gray-300 first:border-t-transparent last:border-b-transparent w-full pb-8 text-lg">
+      <div className="m-4 mb-8 font-bold">{rocket.name}</div>
+    </tr>
   </>
 );
 
