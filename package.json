@@ -51,11 +51,8 @@
     "@babel/eslint-parser": "^7.22.5",
     "@babel/plugin-syntax-jsx": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
-<<<<<<< HEAD
-=======
     "axios-mock-adapter": "^1.21.5",
     "babel-jest": "^29.5.0",
->>>>>>> dev
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.27.5",
