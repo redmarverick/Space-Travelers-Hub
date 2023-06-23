@@ -13,14 +13,14 @@ const RocketsList = () => {
     );
   }
   return (
-    <ul>
+    <div className="flex flex-col">
       {rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
           rocket={rocket}
         />
       ))}
-    </ul>
+    </div>
   );
 };
 

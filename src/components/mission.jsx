@@ -13,10 +13,10 @@ const Mission = ({ mission }) => {
     }
   };
   return (
-    <tr className="even:bg-white odd:bg-gray-200">
+    <tr className="evenodd even:bg-white odd:bg-gray-200">
       <td className="px-4 py-2 border border-gray-500 font-bold">{mission.mission_name}</td>
       <td className="px-4 py-2 border border-gray-500">{mission.description}</td>
-      <td className="p-1 text-center p-0 border border-gray-500">
+      <td className="text-center p-0 border border-gray-500">
         <div className={`w-40 rounded text-white ${mission.joining ? 'bg-teal-500' : 'bg-gray-400'}`}>
           {mission.joining ? 'Active Member' : 'NOT A MEMBER'}
         </div>
