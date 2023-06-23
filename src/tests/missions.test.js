@@ -1,13 +1,6 @@
-// //FAILING
-// describe('TestNotPassing', () => {
-//   test('message just to omit file', () => {
-//     expect(true).toBeTruthy;
-//   });
-// });
-
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import MissionsList2 from './missions2';
 
 jest.mock('react-redux', () => ({
@@ -27,8 +20,12 @@ describe('MissionsList2', () => {
 
   test('renders missions table when isLoading is false', () => {
     const missions = [
-      { mission_id: '1', mission_name: 'Mission 1', description: 'Description 1', joining: true },
-      { mission_id: '2', mission_name: 'Mission 2', description: 'Description 2', joining: false },
+      {
+        mission_id: '1', mission_name: 'Mission 1', description: 'Description 1', joining: true,
+      },
+      {
+        mission_id: '2', mission_name: 'Mission 2', description: 'Description 2', joining: false,
+      },
     ];
     useSelector.mockReturnValue({ missionsArr: missions, isLoading: false });
 

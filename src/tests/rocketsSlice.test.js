@@ -4,9 +4,9 @@ import axios from 'axios';
 import { getRockets, reserve, cancel } from '../redux/rockets/rocketsSlice';
 
 jest.mock('axios', () => ({
-    __esModule: true,
-    default: jest.fn(),
-  }));
+  __esModule: true,
+  default: jest.fn(),
+}));
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);

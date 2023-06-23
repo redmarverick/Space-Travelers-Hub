@@ -11,9 +11,9 @@ import { useSelector } from 'react-redux';
 import RocketsList2 from './rockets2';
 
 jest.mock('react-redux', () => ({
-    useSelector: jest.fn(),
-    useDispatch: jest.fn(),
-  }));
+  useSelector: jest.fn(),
+  useDispatch: jest.fn(),
+}));
 
 describe('RocketsList2', () => {
   afterEach(() => {

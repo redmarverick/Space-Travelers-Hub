@@ -1,16 +1,16 @@
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+import axios from 'axios';
 import {
   getMissions,
   joining,
   leaving,
 } from '../redux/missions/missionsSlice';
-import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
-import axios from 'axios';
 
 jest.mock('axios', () => ({
-    __esModule: true,
-    default: jest.fn(),
-  }));
+  __esModule: true,
+  default: jest.fn(),
+}));
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);

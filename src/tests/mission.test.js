@@ -48,5 +48,4 @@ describe('Mission component', () => {
   });
 
   // Add more test cases as needed
-
 });
