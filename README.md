@@ -10,7 +10,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
-  - [Live Demo](#live-demo)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
@@ -53,10 +52,6 @@ TailWind
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-### Live Demo
-
-(Coming soon~)
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -91,6 +86,8 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
+
+You can run the following line to test all test files: npm test -- --watchAll
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
