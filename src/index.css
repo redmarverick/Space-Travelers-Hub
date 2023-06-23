@@ -30,7 +30,7 @@ body {
   border: 2px solid black;
 }
 
-tr:nth-child(even) {
+.oddeven:nth-child(even) {
   background-color: grey;
 }
 
